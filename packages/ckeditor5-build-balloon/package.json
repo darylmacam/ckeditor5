@@ -70,5 +70,9 @@
   "scripts": {
     "build": "webpack --mode production",
     "preversion": "npm run build"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-code-block": "^19.0.0",
+    "@ckeditor/ckeditor5-upload": "^19.0.0"
   }
 }
