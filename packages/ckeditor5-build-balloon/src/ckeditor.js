@@ -31,6 +31,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
 import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize'
 
 export default class BalloonEditor extends BalloonEditorBase {}
 
@@ -60,7 +61,8 @@ BalloonEditor.builtinPlugins = [
 	TableToolbar,
 	TextTransformation,
 	Base64UploadAdapter,
-	CodeBlock
+	CodeBlock,
+	// ImageResize
 ];
 
 // Editor configuration.
@@ -91,8 +93,19 @@ BalloonEditor.defaultConfig = {
 		toolbar: [
 			'imageStyle:full',
 			'imageStyle:side',
+			'imageStyle:alignLeft',
+			'imageStyle:alignCenter',
+			'imageStyle:alignRight',
 			'|',
-			'imageTextAlternative'
+			'imageTextAlternative',
+			'imageResize'
+		],
+		styles:[
+			'side',
+			'full',
+			'alignCenter',
+			'alignLeft',
+			'alignRight'
 		]
 	},
 	table: {
