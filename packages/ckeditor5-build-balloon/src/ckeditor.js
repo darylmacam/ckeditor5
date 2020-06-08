@@ -62,7 +62,7 @@ BalloonEditor.builtinPlugins = [
 	TextTransformation,
 	Base64UploadAdapter,
 	CodeBlock,
-	// ImageResize
+	ImageResize
 ];
 
 // Editor configuration.
